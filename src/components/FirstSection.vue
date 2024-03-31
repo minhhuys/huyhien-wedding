@@ -1,36 +1,35 @@
 <template>
     <div class="first-section position-relative">
-        <img src="@/assets/media/fl-t-r.png" alt="huyhien" />
-        <img src="@/assets/media/fl-t-l.png" class="position-absolute img-t-l" alt="huyhien">
+        <img src="@/assets/media/fl-t-r.png" alt="huyhien" width="600" />
+        <img src="@/assets/media/fl-t-l.png" class="position-absolute img-t-l" alt="huyhien" width="500">
 
         <div class="center-a-div">
-            <p class="text-uppercase text-center fw-semibold text-description">
+            <p class="text-uppercase text-center fw-semibold text-description" data-aos="fade-up" data-aos-delay="50"
+                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
                 weddings
             </p>
-            <div class="bride-and-groom d-flex align-items-center">
+            <div class="bride-and-groom d-flex align-items-center justify-content-center" data-aos="fade-up"
+                data-aos-delay="100" data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once="false">
                 <p>Minh Huy</p>
                 <div>
                     <img src="@/assets/media/left.png" class="img-fluid mx-3" alt="">
                 </div>
                 <p>Thu Hiền</p>
             </div>
-            <p class="text-uppercase text-center fw-semibold text-description">
+            <p class="text-uppercase text-center fw-semibold text-description" data-aos="fade-up" data-aos-delay="150"
+                data-aos-duration="1400" data-aos-easing="ease-in-out" data-aos-once="false">
                 we are getting married
             </p>
         </div>
 
 
-        <div class="position-absolute img-bottom-section w-100">
+        <!-- <div class="position-absolute img-bottom-section w-100">
             <div class="d-flex justify-content-between">
                 <img src="@/assets/media/fl-b-l.png" alt="" class="img-fluid d-lg-block d-none">
                 <img src="@/assets/media/fl-b-c.png" alt="" class="">
                 <img src="@/assets/media/fl-b-r.png" alt="" class="img-fluid img-fluid d-lg-block d-none">
             </div>
-        </div>
-
-
-
-
+        </div> -->
     </div>
 </template>
 
@@ -49,6 +48,8 @@
     }
 
     .bride-and-groom {
+        width: 1200px;
+
         p {
             font-family: "Playfair", serif;
             font-size: 100px;
@@ -73,7 +74,7 @@
         img:nth-child(2) {
             position: absolute;
             bottom: 0;
-            left: 50%;
+            left: 100%;
             transform: translate(-50%, 0);
         }
     }

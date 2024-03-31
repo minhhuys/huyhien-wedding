@@ -1,14 +1,15 @@
 <template>
-    <div class="second-section row">
+    <div class="second-section row no-gutters">
         <div class="col-12">
             <div class="second-section-main">
                 <div class="second-section-wrapper position-relative mx-auto">
                     <div class="invitation-holder position-relative">
-                        <div class="invitation-image position-absolute">
+                        <div class="invitation-image position-absolute" data-aos="fade-right" data-aos-duration="1000">
                             <img src="https://gretnagreen.qodeinteractive.com/wp-content/uploads/2018/04/h1-img-1.jpg"
                                 class="img-fluid" alt="">
                         </div>
-                        <div class="invitation-text-holder position-relative w-100">
+                        <div class="invitation-text-holder position-relative w-100" data-aos="fade-left"
+                            data-aos-duration="1000">
                             <div class="invitation-text-holder-inner">
                                 <span>
                                     <img width="37" height="27"
@@ -49,11 +50,10 @@
 
 .font-prata {
     font-family: "Prata";
-    ;
 }
 
 .second-section {
-    padding: 140px 0;
+    padding: 50px 0;
     font-family: "Playfair", serif;
 
     .second-section-main {
@@ -142,5 +142,32 @@
         bottom: 10%;
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    .second-section {
+        .second-section-main {
+            .second-section-wrapper {
+                width: 100%;
+
+                .invitation-holder {
+                    .invitation-image {
+                        width: 100%;
+                    }
+
+                    .invitation-text-holder {
+                        padding: 0 20px;
+
+                        .invitation-text-holder-inner {
+                            width: 100%;
+                            margin-left: 0%;
+                            border-left: 25px solid rgba(251, 184, 172, .4);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
 }
 </style>

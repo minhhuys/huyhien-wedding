@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="caption-box position-relative text-center">
-                <div class="text">Ngày cưới của chúng tôi sắp tới</div><span class="icon-divider-img"></span>
+                <div class="text">Ngày cưới của chúng tôi còn</div><span class="icon-divider-img"></span>
             </div>
         </div>
         <div class="time-counter d-flex align-items-center justify-content-center">
@@ -77,7 +77,7 @@ export default {
 
             .image-box-inner {
                 position: absolute;
-                top: 10%;
+                top: 15%;
                 left: 50%;
                 transform: translate(-50%, -50%);
 
@@ -89,6 +89,8 @@ export default {
                     .icon-flower {
                         animation: spin 100s linear infinite;
                         background-image: url('https://wendola-nuxt.vercel.app/_nuxt/flowers-1.BsNB3zuG.png');
+                        background-size: cover;
+                        background-repeat: no-repeat;
                         height: 641px;
                         width: 669px;
                     }
@@ -147,6 +149,57 @@ export default {
 
     100% {
         transform: rotate(1turn);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .third-section {
+        padding: 120px 0 50px 0;
+
+        .third-section-content {
+            width: 100%;
+
+            .image-box {
+                margin-bottom: 120px;
+
+                .image-box-inner {
+                    position: absolute;
+                    top: 0%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    img {
+                        border-radius: 50%;
+                        width: 320px;
+                    }
+
+                    .flower-box {
+                        .icon-flower {
+                            width: 400px;
+                            height: 380px
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .time-counter {
+            .count {
+                &:nth-child(1) {
+                    margin-left: 0;
+                }
+
+                font-size: 25px;
+                margin-left: 35px;
+            }
+
+            sub {
+                font-size: 16px;
+                margin-top: 20px
+            }
+        }
     }
 }
 </style>
