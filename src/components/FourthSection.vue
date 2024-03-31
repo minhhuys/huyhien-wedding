@@ -1,82 +1,101 @@
 <template>
-    <section class="parallax">
+    <section class="parallax position-relative">
         <div class="parallax-inner">
-            <div class="card mx-auto">
-                <div class="card-body p-5 position-relative" v-if="!isMessaged">
-                    <h2>Bạn sẽ tham dự?</h2>
-
-                    <div class="rdio rdio-primary radio-inline">
-                        <input type="radio" class="ml-1" name="optradio" id="rdio1" :checked="willJoin"
-                            @input="changeEvent(true)">
-                        <label for="rdio1">
-                            Có
-                        </label>
-                    </div>
-
-                    <div class="rdio rdio-primary radio-inline">
-                        <input type="radio" class="ml-1" name="optradio" id="rdio2" :checked="!willJoin"
-                            @input="changeEvent(false)">
-                        <label for="rdio2"> Không thể tham dự </label>
-                    </div>
-
-                    <div v-if="!willJoin">
-                        <p class="unhappy mt-3 text-muted">🥲 Oops! Thật đáng tiếc, đừng lo lắng, chúng tôi vẫn ghi nhận
-                            sự có mặt
-                            của
-                            bạn qua 1 trong 2
-                            nền tảng sau 😅:</p>
-                        <div class="d-flex align-items-center justify-content-between text-center">
-                            <div class="qr-groom">
-                                <img src="@/assets/media/qr-huy.jpg" width="150" alt="">
-                                <p>Nhà trai</p>
-                            </div>
-                            <div class="d-lg-block d-none">
-                                <img src="@/assets/media/left.png" class="img-fluid mx-3" alt="">
-                            </div>
-                            <div class="qr-groom">
-                                <img src="@/assets/media/qr-huy.jpg" width="150" alt="">
-                                <p>Nhà gái</p>
-                            </div>
+            <div class="row">
+                <div class="col-md-6 col-12 d-flex flex-row align-items-center">
+                    <div class="text-center parallax-inner-left">
+                        <h2 class="title text-uppercase">
+                            Happy wedding day!!!
+                        </h2>
+                        <div class="text mb-4">
+                            Sự hiện diện của bạn là niềm vinh dự cho chúng tớ, đừng quên ngày 02 tháng 05 năm 2024 này
+                            nhé, RSVP!
                         </div>
                     </div>
-
-
-                    <form class="form">
-                        <input type="text" v-model="name" placeholder="Tên của bạn"
-                            class="form-control form-control-solid mt-3">
-
-                        <input v-if="willJoin" type="text" v-model="comeupwith"
-                            placeholder="Bạn sẽ đi với ai? VD: sự cô đơn, bạn X..."
-                            class="form-control form-control-solid mb-3">
-
-                        <textarea name="participant-wish" cols="30" rows="8" placeholder="Lời chúc"
-                            v-model="message"></textarea>
-
-                        <button class="btn btn-primary" @click.prevent="sendMessage">Gửi thông điệp</button>
-                    </form>
                 </div>
-                <div class="card-body" v-else>
-                    <div class="promotion">
-                        <div class="wedding-thanksful">
-                            <div class="thanksful-title" id="confeti">
-                                <img src="@/assets/media/cracker.png" alt />
-                                <p class="mb-0">Cảm ơn bạn đã xác nhận sự tham dự</p>
+                <div class="col-md-6 col-12">
+                    <div class="card mx-auto">
+                        <div class="card-body p-5 position-relative" v-if="!isMessaged">
+                            <h2>Bạn sẽ tham dự?</h2>
+
+                            <div class="rdio rdio-primary radio-inline">
+                                <input type="radio" class="ml-1" name="optradio" id="rdio1" :checked="willJoin"
+                                    @input="changeEvent(true)">
+                                <label for="rdio1">
+                                    Có
+                                </label>
                             </div>
-                            <div class="add-to-calendar">
-                                <p class="mb-0 mr-3">Thêm sự kiện này vào calendar của bạn</p>
-                                <add-to-calendar-button name="Huy Hiền's Wedding"
-                                    description="Cảm ơn bạn đã nhận lời đến chung vui cùng Huy và Hiền 🥳"
-                                    startDate="2024-05-02" startTime="17:30" endDate="2024-05-02" endTime="23:00"
-                                    timeZone="Asia/Saigon"
-                                    location="Sen Tây Hồ, 127 Nhật Chiêu, Nhật Tân, Tây Hồ, Hà Nội"
-                                    options="'Google','Apple'" listStyle="dropdown-static" buttonStyle="flat"
-                                    trigger="click" lightMode="light"></add-to-calendar-button>
+
+                            <div class="rdio rdio-primary radio-inline">
+                                <input type="radio" class="ml-1" name="optradio" id="rdio2" :checked="!willJoin"
+                                    @input="changeEvent(false)">
+                                <label for="rdio2"> Không thể tham dự </label>
+                            </div>
+
+                            <div v-if="!willJoin">
+                                <p class="unhappy mt-3 text-muted">🥲 Oops! Thật đáng tiếc, đừng lo lắng, chúng tôi vẫn
+                                    ghi
+                                    nhận
+                                    sự có mặt
+                                    của
+                                    bạn qua 1 trong 2
+                                    nền tảng sau 😅:</p>
+                                <div class="d-flex align-items-center justify-content-between text-center">
+                                    <div class="qr-groom">
+                                        <img src="@/assets/media/qr-huy.jpg" width="150" alt="">
+                                        <p>Nhà trai</p>
+                                    </div>
+                                    <div class="d-lg-block d-none">
+                                        <img src="@/assets/media/left.png" class="img-fluid mx-3" alt="">
+                                    </div>
+                                    <div class="qr-groom">
+                                        <img src="@/assets/media/qr-huy.jpg" width="150" alt="">
+                                        <p>Nhà gái</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <form class="form">
+                                <input type="text" v-model="name" placeholder="Tên của bạn"
+                                    class="form-control form-control-solid mt-3">
+
+                                <input v-if="willJoin" type="text" v-model="comeupwith"
+                                    placeholder="Bạn sẽ đi với ai? VD: sự cô đơn, bạn X..."
+                                    class="form-control form-control-solid mb-3">
+
+                                <textarea name="participant-wish" cols="30" rows="8" placeholder="Lời chúc"
+                                    v-model="message"></textarea>
+
+                                <button class="btn btn-primary" @click.prevent="sendMessage">Gửi thông điệp</button>
+                            </form>
+                        </div>
+                        <div class="card-body" v-else>
+                            <div class="promotion">
+                                <div class="wedding-thanksful">
+                                    <div class="thanksful-title" id="confeti">
+                                        <img src="@/assets/media/cracker.png" alt />
+                                        <p class="mb-0">Cảm ơn bạn đã xác nhận sự tham dự</p>
+                                    </div>
+                                    <div class="add-to-calendar">
+                                        <p class="mb-0 mr-3">Thêm sự kiện này vào calendar của bạn</p>
+                                        <add-to-calendar-button name="Huy Hiền's Wedding"
+                                            description="Cảm ơn bạn đã nhận lời đến chung vui cùng Huy và Hiền 🥳"
+                                            startDate="2024-05-02" startTime="17:30" endDate="2024-05-02"
+                                            endTime="23:00" timeZone="Asia/Saigon"
+                                            location="Sen Tây Hồ, 127 Nhật Chiêu, Nhật Tân, Tây Hồ, Hà Nội"
+                                            options="'Google','Apple'" listStyle="dropdown-static" buttonStyle="flat"
+                                            trigger="click" lightMode="light"></add-to-calendar-button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="icon-flowers d-lg-block d-none"></div>
     </section>
 </template>
 <script>
@@ -163,6 +182,7 @@ export default {
 </script>
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
 .parallax {
     background: url('https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') repeat fixed 100%;
@@ -170,6 +190,28 @@ export default {
     color: aliceblue;
     padding: 100px 0;
     font-family: 'Prata';
+
+    .icon-flowers {
+        background-image: url('@/assets/media/fl-card-bg.png');
+        bottom: 0;
+        display: inline-block;
+        height: 604px;
+        left: 0;
+        position: absolute;
+        width: 432px;
+    }
+
+    .parallax-inner-left {
+        padding: 0 20px;
+
+        .title {
+            font-family: 'Cinzel';
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 1.2em;
+        }
+
+    }
 
     .card {
         max-width: 500px;
@@ -403,12 +445,12 @@ export default {
     .parallax {
         padding: 20px;
 
-        .card-body {
+        .parallax-inner-left {
 
-            &::before,
-            &::after {
-                display: none;
+            .title {
+                font-size: 40px;
             }
+
         }
     }
 }
