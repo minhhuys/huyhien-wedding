@@ -34,7 +34,7 @@
 </template>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 
 .first-section {
@@ -51,9 +51,9 @@
         width: 1200px;
 
         p {
-            font-family: "Playfair", serif;
+            font-family: "Great Vibes", cursive;
             font-size: 100px;
-            font-weight: 500;
+            font-weight: 600;
             letter-spacing: 2px;
         }
 
@@ -78,40 +78,6 @@
             transform: translate(-50%, 0);
         }
     }
-
-
-    // p {
-    //     font-family: "Playfair Display";
-    //     z-index: 1;
-    //     height: auto;
-    //     width: auto;
-    //     color: rgb(251, 156, 140);
-    //     text-decoration: none;
-    //     white-space: nowrap;
-    //     min-height: 0px;
-    //     min-width: 0px;
-    //     max-height: none;
-    //     max-width: none;
-    //     text-align: inherit;
-    //     line-height: 450px;
-    //     letter-spacing: 0px;
-    //     font-weight: 400;
-    //     font-size: 500px;
-    //     top: 40%;
-    // }
-
-    // .img-wedding {
-    //     z-index: 2;
-    //     top: 55%;
-    //     left: 40%;
-
-    //     .img-wedding-2 {
-    //         position: absolute;
-    //         left: 65%;
-    //         top: 25%;
-    //     }
-
-    // }
 }
 
 @media screen and (max-width: 768px) {

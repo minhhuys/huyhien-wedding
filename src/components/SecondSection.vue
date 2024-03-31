@@ -24,8 +24,8 @@
                                 <p class="font-prata mt-5">Buổi tiệc sẽ được diễn ra tại</p>
                                 <img src="@/assets/media/crow.png" class="img-fluid mx-3" alt="">
                                 <p class="invitation-text mt-3 ">
-                                    <span class="font-weight-semibold h2 font-prata">Star Palace</span><br>
-                                    <span>Sen Tây Hồ, 127 Nhật Chiêu, Nhật Tân, Tây Hồ, Hà Nội</span>
+                                    <span class="font-weight-semibold h2 font-prata d-block mb-1">Star Palace</span>
+                                    <span class="font-prata">Sen Tây Hồ, 127 Nhật Chiêu, Nhật Tân, Tây Hồ, Hà Nội</span>
                                 </p>
                                 <img src="@/assets/media/crow2.png" class="img-fluid mx-3" alt="">
                                 <p class="invitation-date font-prata mt-3">vào lúc 17 giờ 30 <br>
@@ -44,7 +44,7 @@
 </template>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 
 
@@ -54,7 +54,6 @@
 
 .second-section {
     padding: 50px 0;
-    font-family: "Playfair", serif;
 
     .second-section-main {
         box-sizing: border-box;
@@ -88,6 +87,7 @@
                         font-size: 55px;
                         line-height: .87em;
                         margin: 8px;
+                        font-family: "Great Vibes", cursive;
                     }
 
                     .invitation-separator {
@@ -96,6 +96,7 @@
                         margin: 9px 0 -4px;
                         padding: 0 12px;
                         font-style: italic;
+
                     }
 
                     .invitation-separator::before {
@@ -121,12 +122,16 @@
                     }
 
                     .invitation-text {
-                        font-size: 20px;
+                        // font-size: 20px;
 
                         span:first-child {
                             color: #c0690a;
                             font-size: 25px;
                             text-transform: uppercase
+                        }
+
+                        span:nth-child(2) {
+                            font-size: 18px;
                         }
 
                     }
