@@ -3,7 +3,7 @@
         <div class="third-section-content mx-auto mb-5">
             <div class="image-box text-center">
                 <div class="image-box-inner">
-                    <img src="https://wendola-nuxt.vercel.app/images/resource/countdown-1.jpg" alt="">
+                    <img src="@/assets/media/img-banner.png" width="500" height="500" alt="">
                     <div class="flower-box center-a-div">
                         <div class="icon-flower"></div>
                     </div>

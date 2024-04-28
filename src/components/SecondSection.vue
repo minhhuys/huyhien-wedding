@@ -5,7 +5,7 @@
                 <div class="second-section-wrapper position-relative mx-auto">
                     <div class="invitation-holder position-relative">
                         <div class="invitation-image position-absolute" data-aos="fade-right" data-aos-duration="1000">
-                            <img src="https://gretnagreen.qodeinteractive.com/wp-content/uploads/2018/04/h1-img-1.jpg"
+                            <img src="@/assets/media/section-2-img.png"
                                 class="img-fluid" alt="">
                         </div>
                         <div class="invitation-text-holder position-relative w-100" data-aos="fade-left"

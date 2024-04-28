@@ -11,28 +11,72 @@
                 happiness
             </h6>
         </div>
-
-        <carousel :autoplay="true" :dots="false" :nav="false" autoWidth loop rewind>
-            <img src="https://gretnagreen.qodeinteractive.com/wp-content/uploads/2018/05/h1-img-6.jpg">
-            <img src="https://gretnagreen.qodeinteractive.com/wp-content/uploads/2018/05/h1-img-7.jpg">
-            <img src="https://gretnagreen.qodeinteractive.com/wp-content/uploads/2018/05/h1-img-8.jpg">
-            <img src="https://gretnagreen.qodeinteractive.com/wp-content/uploads/2018/05/h1-img-9.jpg">
-            <img src="https://gretnagreen.qodeinteractive.com/wp-content/uploads/2018/05/h1-img-3.jpg">
-            <img src="https://gretnagreen.qodeinteractive.com/wp-content/uploads/2018/05/h1-img-2.jpg">
-        </carousel>
+        <masonry
+            :cols="3"
+            :gutter="10"
+            >
+            <img src="@/assets/media/img-1.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+            <img src="@/assets/media/img-2.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+                data-aos-duration="1100" data-aos-easing="ease-in-out" data-aos-once="false">
+            <img src="@/assets/media/img-3.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+                data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once="false">
+            <img src="@/assets/media/img-4.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+                data-aos-duration="1300" data-aos-easing="ease-in-out" data-aos-once="false">
+            <img src="@/assets/media/img-5.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+                data-aos-duration="1400" data-aos-easing="ease-in-out" data-aos-once="false">
+            <img src="@/assets/media/img-6.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+                data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="false">
+            <img src="@/assets/media/img-8.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+                data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="false">
+            <img src="@/assets/media/img-7.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+                data-aos-duration="1700" data-aos-easing="ease-in-out" data-aos-once="false">
+            <img src="@/assets/media/img-9.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+                data-aos-duration="1800" data-aos-easing="ease-in-out" data-aos-once="false">
+            <img src="@/assets/media/img-13.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+                data-aos-duration="1900" data-aos-easing="ease-in-out" data-aos-once="false">
+            <img src="@/assets/media/img-10.jpeg" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+                data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-once="false">
+            <img src="@/assets/media/img-11.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+                data-aos-duration="2100" data-aos-easing="ease-in-out" data-aos-once="false">
+            <img src="@/assets/media/img-12.png" class="img-fluid mb-2" 
+            data-aos="fade-up" data-aos-delay="50"
+                data-aos-duration="2200" data-aos-easing="ease-in-out" data-aos-once="false">
+            <img src="@/assets/media/img-14.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+                data-aos-duration="2300" data-aos-easing="ease-in-out" data-aos-once="false">
+        </masonry>
     </div>
 </template>
 
 <script>
-import carousel from 'vue-owl-carousel'
+import Vue from 'vue'
+// import carousel from 'vue-owl-carousel'
+import VueMasonry from 'vue-masonry-css'
 
+Vue.use(VueMasonry);
 export default {
-    components: { carousel },
+
 }
 </script>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+.pinterest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 10px;
+  gap: 10px;
+}
+
+.grid-item {
+  grid-row-end: span 2;
+}
+
+.grid-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .fifth-section {
     font-family: 'Prata';
