@@ -30,8 +30,10 @@
                                 <img src="@/assets/media/crow2.png" class="img-fluid mx-3" alt="">
                                 <p class="invitation-date font-prata mt-3">vào lúc 17 giờ 30 <br>
                                     Thứ 5 | 02 - 05 - 2024</p>
+                        <a href="https://maps.app.goo.gl/UBWz7WedZkFfZaqp8" target="_blank" class="text-dark font-weight-lighter" style="font-size: 13px; text-decoration: underline;">bản đồ</a>
+
                             </div>
-                        </div>
+                        </div>                    
                     </div>
                 </div>
             </div>
