@@ -16,20 +16,20 @@
                 <div class="col-md-6 col-12">
                     <div class="card mx-auto">
                         <div class="card-body p-5 position-relative" v-if="!isMessaged">
-                            <h2>Bạn sẽ tham dự?</h2>
+                            <h2>Bạn sẽ đến chung vui với chúng tôi nhé?</h2>
 
                             <div class="rdio rdio-primary radio-inline">
                                 <input type="radio" class="ml-1" name="optradio" id="rdio1" :checked="willJoin"
                                     @input="changeEvent(true)">
                                 <label for="rdio1">
-                                    Có
+                                    Mình sẽ tham dự
                                 </label>
                             </div>
 
-                            <div class="rdio rdio-primary radio-inline">
+                            <div class="rdio rdio-primary radio-inline d-flex">
                                 <input type="radio" class="ml-1" name="optradio" id="rdio2" :checked="!willJoin"
                                     @input="changeEvent(false)">
-                                <label for="rdio2"> Không thể tham dự </label>
+                                <label for="rdio2">Tiếc quá, mình không thể tham dự</label>
                             </div>
 
                             <div v-if="!willJoin">
@@ -67,11 +67,11 @@
                                 <textarea name="participant-wish" cols="30" rows="8" placeholder="Lời chúc"
                                     v-model="message"></textarea>
 
-                                <button class="btn btn-primary" @click.prevent="sendMessage">Gửi thông điệp</button>
+                                <button class="btn btn-primary" @click.prevent="!sending ? sendMessage() : null">{{!sending ? `Gửi thông điệp` : `Đang gửi...`}}</button>
                             </form>
                         </div>
                         <div class="card-body" v-else>
-                            <div class="promotion">
+                            <div class="promotion" v-if="willJoin">
                                 <div class="wedding-thanksful">
                                     <div class="thanksful-title" id="confeti">
                                         <img src="@/assets/media/cracker.png" alt />
@@ -89,6 +89,14 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="promotion" v-else>
+                                <div class="wedding-thanksful">
+                                    <div class="thanksful-title" id="confeti">
+                                        <img src="@/assets/media/cracker.png" alt />
+                                        <p class="mb-0">Cảm ơn bạn về lời chúc 👌</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,6 +110,7 @@
 const TOKEN = `6943323952:AAFRbnTRCuynz_sGhKSOgQP8RkCjyNUwyOo`;
 const GROUP_ID = `-4179900065`
 const TOKEN_CNAME = "is_wished";
+const WILL_JOIN = 'will_join'
 import 'add-to-calendar-button';
 
 export default {
@@ -111,7 +120,8 @@ export default {
             name: "",
             comeupwith: "",
             message: "",
-            isMessaged: false
+            isMessaged: false,
+            sending: false
         }
     },
 
@@ -144,8 +154,15 @@ export default {
         },
 
         async sendMessage() {
-
             if (!this.name || !this.message) return;
+
+            this.sending = true
+
+            if(this.willJoin) {
+                this.setCookie(WILL_JOIN, true, 30);
+            } else {
+                this.setCookie(WILL_JOIN, false, 30);
+            }
 
             let data = {
                 name: this.name,
@@ -168,6 +185,7 @@ export default {
             }).then(() => {
                 this.setCookie(TOKEN_CNAME, true, 30);
                 this.isMessaged = true
+                this.sending = false
             });
         }
     },
@@ -176,7 +194,19 @@ export default {
         let cookie = this.getCookie(TOKEN_CNAME);
         if (cookie) {
             this.isMessaged = true;
+
+            if(this.isMessaged) {
+                let willJoinCookie = this.getCookie(WILL_JOIN)
+                console.log('willJoinCookie', willJoinCookie)
+                // willJoinCookie ? this.willJoin = true : this.willJoin = false
+
+                willJoinCookie === 'true'
+                ? this.willJoin = true
+                : this.willJoin = false
+            }
         }
+
+        
     }
 }
 </script>
@@ -203,6 +233,7 @@ export default {
 
     .parallax-inner-left {
         padding: 0 20px;
+        z-index: 10;
 
         .title {
             font-family: 'Cinzel';
@@ -331,6 +362,7 @@ export default {
 
             p {
                 font-size: 14px;
+                z-index: 10;
             }
 
             p,
@@ -451,6 +483,36 @@ export default {
                 font-size: 40px;
             }
 
+        }
+
+         .wedding-thanksful {
+
+        .thanksful-title {
+            line-height: 21px;
+            background: #c0d4ad;
+
+        }
+
+        .add-to-calendar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 16px 0;
+            padding: 0 16px;
+
+            p,
+            button {
+                width: 100%;
+            }
+
+        }
+    }
+    }
+
+
+    .qr-groom {
+        img {
+            width: 100px;
         }
     }
 }

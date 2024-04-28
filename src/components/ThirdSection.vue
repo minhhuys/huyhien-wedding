@@ -172,6 +172,7 @@ export default {
                     img {
                         border-radius: 50%;
                         width: 320px;
+                        height: 320px;
                     }
 
                     .flower-box {
