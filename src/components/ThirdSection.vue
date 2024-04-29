@@ -3,7 +3,7 @@
         <div class="third-section-content mx-auto mb-5">
             <div class="image-box text-center">
                 <div class="image-box-inner">
-                    <img src="@/assets/media/img-banner.png" width="500" height="500" alt="">
+                    <img src="@/assets/media/img-banner.webp" width="500" height="500" alt="">
                     <div class="flower-box center-a-div">
                         <div class="icon-flower"></div>
                     </div>
@@ -88,7 +88,7 @@ export default {
                 .flower-box {
                     .icon-flower {
                         animation: spin 100s linear infinite;
-                        background-image: url('https://wendola-nuxt.vercel.app/_nuxt/flowers-1.BsNB3zuG.png');
+                        background-image: url('@/assets/media/flowers-1.webp');
                         background-size: cover;
                         background-repeat: no-repeat;
                         height: 641px;

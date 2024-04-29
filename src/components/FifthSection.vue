@@ -15,34 +15,30 @@
             :cols="3"
             :gutter="10"
             >
-            <img src="@/assets/media/img-1.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
-                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-2.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
-                data-aos-duration="1100" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-3.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
-                data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-4.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
-                data-aos-duration="1300" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-5.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+            <img src="@/assets/media/img-1.webp" class="img-fluid mb-2" >
+            <img src="@/assets/media/img-2.webp" class="img-fluid mb-2" >
+            <img src="@/assets/media/img-3.webp" class="img-fluid mb-2" >
+            <img src="@/assets/media/img-4.webp" class="img-fluid mb-2" >
+            <img src="@/assets/media/img-5.webp" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
                 data-aos-duration="1400" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-6.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+            <img src="@/assets/media/img-6.webp" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
                 data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-8.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+            <img src="@/assets/media/img-8.webp" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
                 data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="false">
             <img src="@/assets/media/img-7.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
                 data-aos-duration="1700" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-9.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+            <img src="@/assets/media/img-9.webp" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
                 data-aos-duration="1800" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-13.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+            <img src="@/assets/media/img-13.webp" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
                 data-aos-duration="1900" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-10.jpeg" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+            <img src="@/assets/media/img-10.webp" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
                 data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-11.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+            <img src="@/assets/media/img-11.webp" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
                 data-aos-duration="2100" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-12.png" class="img-fluid mb-2" 
+            <img src="@/assets/media/img-12.webp" class="img-fluid mb-2" 
             data-aos="fade-up" data-aos-delay="50"
                 data-aos-duration="2200" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-14.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
+            <img src="@/assets/media/img-14.webp" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
                 data-aos-duration="2300" data-aos-easing="ease-in-out" data-aos-once="false">
         </masonry>
     </div>

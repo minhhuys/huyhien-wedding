@@ -215,7 +215,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
 .parallax {
-    background: url('@/assets/media/ring-and-card-min.png') repeat fixed 100%;
+    background: url('@/assets/media/ring-and-card.webp') repeat fixed 100%;
     background-size: cover;
     color: aliceblue;
     padding: 100px 0;

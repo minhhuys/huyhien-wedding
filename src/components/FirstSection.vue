@@ -1,7 +1,7 @@
 <template>
     <div class="first-section position-relative">
-        <img src="@/assets/media/fl-t-r.png" alt="huyhien" width="600" />
-        <img src="@/assets/media/fl-t-l.png" class="position-absolute img-t-l" alt="huyhien" width="500">
+        <img src="@/assets/media/fl-t-r.webp" alt="huyhien" width="600" />
+        <img src="@/assets/media/fl-t-l.webp" class="position-absolute img-t-l" alt="huyhien" width="500">
 
         <div class="center-a-div">
             <p class="text-uppercase text-center fw-semibold text-description" data-aos="fade-up" data-aos-delay="50"
