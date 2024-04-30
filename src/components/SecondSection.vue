@@ -33,14 +33,10 @@
                         <a href="https://maps.app.goo.gl/UBWz7WedZkFfZaqp8" target="_blank" class="text-dark font-weight-lighter" style="font-size: 13px; text-decoration: underline;">bản đồ</a>
 
                             </div>
-                        </div>                    
+                        </div>      
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="second-section-text font-prata">
-                <img src="@/assets/media/ring.jpeg" alt="">
-            </div> -->
         </div>
     </div>
 </template>

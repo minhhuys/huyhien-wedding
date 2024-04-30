@@ -1,11 +1,9 @@
 <template>
     <div class="fifth-section position-relative">
         <div class="fifth-section-header text-center my-5">
-            <img src="@/assets/media/ring.jpeg" alt="" width="250" data-aos="fade-up" data-aos-delay="10"
-                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+            <img src="@/assets/media/ring.jpeg" alt="" width="250">
 
-            <h1 data-aos="fade-up" data-aos-delay="20" data-aos-duration="1200" data-aos-easing="ease-in-out"
-                data-aos-once="false">Our Memories</h1>
+            <h1>Our Memories</h1>
             <h6 class="header-subtitle" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1400"
                 data-aos-easing="ease-in-out" data-aos-once="false">
                 happiness
@@ -15,18 +13,12 @@
             :cols="3"
             :gutter="10"
             >
-            <img src="@/assets/media/img-1.webp" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
-                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-2.webp" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
-                data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-3.webp" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
-                data-aos-duration="1300" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-4.webp" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
-                data-aos-duration="1400" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-5.webp" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
-                data-aos-duration="1400" data-aos-easing="ease-in-out" data-aos-once="false">
-            <img src="@/assets/media/img-6.webp" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
-                data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="false">
+            <img src="@/assets/media/img-1.webp" class="img-fluid mb-2">
+            <img src="@/assets/media/img-2.webp" class="img-fluid mb-2">
+            <img src="@/assets/media/img-3.webp" class="img-fluid mb-2">
+            <img src="@/assets/media/img-4.webp" class="img-fluid mb-2">
+            <img src="@/assets/media/img-5.webp" class="img-fluid mb-2">
+            <img src="@/assets/media/img-6.webp" class="img-fluid mb-2">
             <img src="@/assets/media/img-8.webp" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"
                 data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="false">
             <img src="@/assets/media/img-7.png" class="img-fluid mb-2" data-aos="fade-up" data-aos-delay="50"

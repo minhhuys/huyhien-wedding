@@ -84,7 +84,8 @@
                                             startDate="2024-05-02" startTime="17:30" endDate="2024-05-02"
                                             endTime="23:00" timeZone="Asia/Saigon"
                                             location="Sen Tây Hồ, 127 Nhật Chiêu, Nhật Tân, Tây Hồ, Hà Nội"
-                                            options="'Google','Apple'" listStyle="dropdown-static" buttonStyle="flat"
+                                            options="'Google','Apple'" listStyle="dropdown-static" buttonStyle="flat"  hideBackground
+                                            label="Thêm vào lịch"
                                             trigger="click" lightMode="light"></add-to-calendar-button>
                                     </div>
                                 </div>
@@ -485,7 +486,7 @@ export default {
 
         }
 
-         .wedding-thanksful {
+        .wedding-thanksful {
 
         .thanksful-title {
             line-height: 21px;
@@ -505,6 +506,21 @@ export default {
                 width: 100%;
             }
 
+            p {
+                text-align: center;
+                margin-bottom: 10px !important
+            }
+
+        }
+
+        .card {
+            .card-body {
+                &:before {
+                    display: none !important;
+                }
+
+
+            }
         }
     }
     }
