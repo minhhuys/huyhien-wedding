@@ -49,7 +49,7 @@
                                         <img src="@/assets/media/left.png" class="img-fluid mx-3" alt="">
                                     </div>
                                     <div class="qr-groom">
-                                        <img src="@/assets/media/qr-huy.jpg" width="150" alt="">
+                                        <img src="@/assets/media/qr-hien.png" width="150" alt="">
                                         <p>Nhà gái</p>
                                     </div>
                                 </div>
