@@ -33,7 +33,7 @@
                             </div>
 
                             <div v-if="!willJoin">
-                                <p class="unhappy mt-3 text-muted">🥲 Oops! Thật đáng tiếc, đừng lo lắng, chúng mình xin trân trọng cảm ơn vì những lời chúc và món quà mà mọi người có thể gửi online ở dưới đây 😅:</p>
+                                <p class="unhappy mt-3 text-muted">🥲 Oops! Thật đáng tiếc, chúng mình xin trân trọng cảm ơn vì những lời chúc và món quà mà mọi người có thể gửi online ở dưới đây:</p>
                                 <div class="d-flex align-items-center justify-content-between text-center">
                                     <div class="qr-groom">
                                         <img src="@/assets/media/qr-huy.jpg" width="150" alt="">
